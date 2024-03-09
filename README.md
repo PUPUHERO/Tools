@@ -11,3 +11,4 @@
 1. Set Windows Terminal as the default terminal
 1. Make Windows Terminal open here and lock it to the taskbar
 1. Make VSCode open here and lock it to the taskbar
+1. Change the installation by using the chocolatey package manager to prevent the annoying asking for Y/N

@@ -7,6 +7,7 @@ pwsh -File "windows\env\gsudo.ps1"
 pwsh -File "windows\env\windowsTerminal.ps1"
 pwsh -File "windows\env\chocolatey.ps1"
 pwsh -File "windows\env\ohMyPosh.ps1"
+pwsh -File "windows\env\TerminalIcon.ps1"
 
 # Install apps
 pwsh -File "windows\app\vscode.ps1"
