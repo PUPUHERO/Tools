@@ -21,3 +21,7 @@ At line:1 char:1
     + CategoryInfo          : ObjectNotFound: (sudo:String) [], CommandNotFoundException
     + FullyQualifiedErrorId : CommandNotFoundException
 ```
+
+### Need to fix the following:
+
+1. ohMyPosh.ps1 on the first time run, it should install oh-my-posh and MesloLGS NF font
