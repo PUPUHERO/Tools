@@ -22,6 +22,12 @@ At line:1 char:1
     + FullyQualifiedErrorId : CommandNotFoundException
 ```
 
-### Need to fix the following:
+### Need to fix the following
 
 1. ohMyPosh.ps1 on the first time run, it should install oh-my-posh and MesloLGS NF font
+
+## TODO
+
+1. Set Windows Terminal as the default terminal
+1. Make Windows Terminal open here and lock it to the taskbar
+1. Make VSCode open here and lock it to the taskbar
