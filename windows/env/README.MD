@@ -8,3 +8,4 @@
   - winget
 - oh-my-posh
   - winget
+  - chocolatey(refreshenv)
