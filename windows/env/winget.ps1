@@ -1,5 +1,4 @@
-# $progressPreference = 'silentlyContinue'
-$ProgressPreference = 'Continue'
+$progressPreference = 'silentlyContinue'
 Write-Host "Downloading WinGet and its dependencies..."
 Invoke-WebRequest -Uri https://aka.ms/getwinget -OutFile Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
 Invoke-WebRequest -Uri https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx -OutFile Microsoft.VCLibs.x64.14.00.Desktop.appx
