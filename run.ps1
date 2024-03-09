@@ -5,3 +5,5 @@ windows\env\windowsTerminal.ps1
 windows\env\ohMyPosh.ps1
 
 windows\app\vscode.ps1
+
+pause
