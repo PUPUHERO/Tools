@@ -3,7 +3,7 @@ $json = Get-Content -Path $env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8
 
 # 將新的對象賦值給 $json.profiles.default
 if (!$json.profiles.default.fonts) {
-    $json.profiles | Add-Member -MemberType NoteProperty -Name "fonts" -Value ([PSCustomObject]@{ 
+    $json.profiles.default | Add-Member -MemberType NoteProperty -Name "fonts" -Value ([PSCustomObject]@{ 
     face = "MesloLGM Nerd Font"
     })
 }
