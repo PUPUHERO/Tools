@@ -12,7 +12,9 @@ windows\env\windowsTerminal.ps1
 # Open and close Windows Terminal
 $terminal = Start-Process wt -PassThru
 Start-Sleep -Seconds 2
-Stop-Process -Id $terminal.Id
+if (Get-Process -Id $terminal.Id -ErrorAction SilentlyContinue) {
+    Stop-Process -Id $terminal.Id
+}
 
 Write-Host "==========Installing Chocolatey...=========="
 windows\env\chocolatey.ps1
