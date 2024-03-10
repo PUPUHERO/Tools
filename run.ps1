@@ -4,13 +4,13 @@ windows\env\pwsh.ps1
 
 # Now can use winget and pwsh to install apps and configure the environment
 Write-Host "==========Installing gsudo...=========="
-pwsh -File "windows\env\gsudo.ps1"
+windows\env\gsudo.ps1
 
 Write-Host "==========Installing WindowsTerminal...=========="
-pwsh -File "windows\env\windowsTerminal.ps1"
+windows\env\windowsTerminal.ps1
 
 Write-Host "==========Installing Chocolatey...=========="
-pwsh -File "windows\env\chocolatey.ps1"
+windows\env\chocolatey.ps1
 
 # Set the environment variables
 Write-Host "==========Setting environment variables for Chocolatey and refreshenv...=========="
