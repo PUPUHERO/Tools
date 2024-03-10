@@ -2,9 +2,7 @@
 
 ## Bugs
 
-### Need to fix the following
-
-1. in ohMyPosh.ps1, Content in $PROFILE is not added to the file.  Need to add it manually.
+### Need to fix the following bugs
 
 ## TODO
 
