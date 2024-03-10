@@ -25,6 +25,10 @@ pwsh -File "windows\env\ohMyPosh.ps1"
 Write-Host "==========Installing Terminal-Icons...=========="
 pwsh -File "windows\env\TerminalIcon.ps1"
 
+# Modify the settings.json of Windows Terminal
+Write-Host "==========Modifying the settings.json of Windows Terminal...=========="
+pwsh -File "windows\env\ModifyWindowsTerminalJSON.ps1"
+
 # Install apps
 Write-Host "==========Installing apps...=========="
 pwsh -File "windows\app\vscode.ps1"
