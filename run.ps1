@@ -21,6 +21,7 @@ Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
 # Install oh-my-posh
 Write-Host "==========Installing oh-my-posh...=========="
 pwsh -File "windows\env\ohMyPosh.ps1"
+refreshenv
 
 Write-Host "==========Installing Terminal-Icons...=========="
 pwsh -File "windows\env\TerminalIcon.ps1"
