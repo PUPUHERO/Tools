@@ -9,7 +9,7 @@ windows\env\gsudo.ps1
 Write-Host "==========Installing WindowsTerminal...=========="
 windows\env\windowsTerminal.ps1
 
-# Open and close Windows Terminal
+# Open and close Windows Terminal for the first time opening initialization
 $terminal = Start-Process wt -PassThru
 Start-Sleep -Seconds 2
 if (Get-Process -Id $terminal.Id -ErrorAction SilentlyContinue) {
