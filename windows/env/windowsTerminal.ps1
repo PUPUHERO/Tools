@@ -9,4 +9,4 @@ if (Get-Process -Id $terminal.Id -ErrorAction SilentlyContinue) {
 
 # Modify the settings.json of Windows Terminal
 Write-Host "==========Modifying the settings.json of Windows Terminal...=========="
-windows\env\ModifyWindowsTerminalJSON.ps1
+windows\env\modifyWindowsTerminalJSON.ps1
