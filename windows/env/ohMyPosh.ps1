@@ -1,11 +1,14 @@
 winget install JanDeDobbeleer.OhMyPosh -s winget
-refreshenv
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
 if (-not (Test-Path -Path $PROFILE)) {
     New-Item -ItemType File -Path $PROFILE -Force
 }
 
-Add-Content $PROFILE 'oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\takuya.omp.json" | Invoke-Expression'
+$line = 'oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\takuya.omp.json" | Invoke-Expression'
+if (!(Select-String -Path $PROFILE -Pattern ( [regex]::Escape($line) ) -Quiet)) {
+    Add-Content $PROFILE $line
+}
 
 . $PROFILE
 

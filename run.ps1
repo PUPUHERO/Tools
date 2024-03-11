@@ -1,6 +1,10 @@
 # Install winget, pwsh
 windows\env\winget.ps1
 
+# Install pwsh
+Write-Host "==========Installing pwsh...=========="
+windows\env\pwsh.ps1
+
 # Install scoop
 Write-Host "==========Installing scoop...=========="
 windows\env\scoop.ps1
@@ -16,10 +20,6 @@ $env:ChocolateyInstall = [System.Environment]::GetEnvironmentVariable("Chocolate
 Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
 
 # The followings are install by winget
-# Install pwsh
-Write-Host "==========Installing pwsh...=========="
-windows\env\pwsh.ps1
-refreshenv
 
 # Now can use winget and pwsh to install apps and configure the environment
 Write-Host "==========Installing gsudo...=========="
