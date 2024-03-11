@@ -24,7 +24,7 @@ pwsh -File "windows\env\ohMyPosh.ps1"
 refreshenv
 
 Write-Host "==========Installing Terminal-Icons...=========="
-pwsh -File "windows\env\TerminalIcon.ps1"
+pwsh -File "windows\env\terminalIcons.ps1"
 
 # Install apps
 Write-Host "==========Installing apps...=========="
